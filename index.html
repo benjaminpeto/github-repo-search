@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Benjamin Peto" />
+        <meta name="keywords" content="slideshow, githubapi, githubuser, githubrepository"/>
+        <meta
+            name="description"
+            content="Take-home challenge from Whisbi. On the front page contains a slideshow, and the second viewport is a form, where you are able to search github users, by their name, and if found one, the app will show you their repos, with the link to each repo."/>
+        <link rel="icon" href="./assets/logo.png" />
+        <title>Whisbi - Project</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+        <!-- IMAGE SLIDESHOW -->
+		<section class="img-slider" aria-label="Slideshow with 5 images describing the impostor syndrome of a developer">
+			<div class="slide active">
+				<img class="image" src="./assets/1-322x241.webp"
+                    srcset="
+                        ./assets/1-322x241.webp 322w,
+                        ./assets/1-640x480.webp 640w,
+                        ./assets/1-1920x1440.webp 1920w
+                    "
+                    alt="scrabble saying go for it"
+                />
+				<div class="info">
+					<h2>Stage 01:</h2>
+					<p>
+						Can I become a Frontend Developer?
+					</p>
+				</div>
+			</div>
+			<div class="slide">
+				<img class="image" src="./assets/1-322x241.webp"
+                    srcset="
+                        ./assets/2-322x241.webp 322w,
+                        ./assets/2-640x480.webp 640w,
+                        ./assets/2-1920x1440.webp 1920w
+                    "
+                    alt="english ABC with scrabble"
+                />
+				<div class="info">
+					<h2>Stage 02:</h2>
+					<p>
+						I am unable to fix this!
+					</p>
+				</div>
+			</div>
+			<div class="slide">
+				<img class="image" src="./assets/1-322x241.webp"
+                    srcset="
+                        ./assets/3-322x241.webp 322w,
+                        ./assets/3-640x480.webp 640w,
+                        ./assets/3-1920x1440.webp 1920w
+                    "
+                    alt="scrabble saying pause, rest, never lose hearth"
+                />
+				<div class="info">
+					<h2>Stage 03:</h2>
+					<p>
+						Questioning career choice.
+					</p>
+				</div>
+			</div>
+			<div class="slide">
+				<img class="image" src="./assets/1-322x241.webp"
+                    srcset="
+                        ./assets/4-322x241.webp 322w,
+                        ./assets/4-640x480.webp 640w,
+                        ./assets/4-1920x1440.webp 1920w
+                    "
+                    alt="scrabble saying this sentence contains threee erors"
+                />
+				<div class="info">
+					<h2>Stage 04:</h2>
+					<p>
+						Ohh, it was just a type0, cool.
+					</p>
+				</div>
+			</div>
+			<div class="slide">
+				<img class="image" src="./assets/1-322x241.webp"
+                    srcset="
+                        ./assets/5-322x241.webp 322w,
+                        ./assets/5-640x480.webp 640w,
+                        ./assets/5-1920x1440.webp 1920w
+                    "
+                    alt="scrabble saying cease the day"
+                />
+				<div class="info">
+					<h2>Stage 05:</h2>
+					<p>
+						Breakthrough makes me feel like Elon Musk.
+					</p>
+				</div>
+			</div>
+			<div class="navigation">
+				<div class="btn active"></div>
+				<div class="btn"></div>
+				<div class="btn"></div>
+				<div class="btn"></div>
+				<div class="btn"></div>
+			</div>
+		</section>
+
+        <!--GITHUB REPO SEARCH -->
+		<section class="form" id="form">
+			<h1>Search github repository by users</h1>
+			<input
+				type="search"
+				name="user"
+				id="user-search"
+				placeholder="Username and press ENTER"
+                aria-label="Search github users for their repositories."
+			/>
+            <div id="root"></div>
+            <h2 id="error-msg"></h2>
+		</section>
+		<script src="app.js"></script>
+	</body>
+</html>
