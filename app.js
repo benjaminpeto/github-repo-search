@@ -76,7 +76,8 @@ userInput.addEventListener("keypress", (event) => {
 		}).then(async (response) => {
 			if (response.ok) {
 				//if user was found
-				return response.json().then((data) => {
+				return response.json()
+				.then((data) => {
 					if (data.public_repos > 0) {
 						//if user has public repository
 						fetch(`https://api.github.com/users/${userName}/repos`, {

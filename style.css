@@ -72,8 +72,8 @@ body {
 	color: #fff;
 	background: black;
 	font-weight: 100;
-	line-height: 2em;
-	font-size: 20px;
+	line-height: 1.4em;
+	font-size: 25px;
 	padding: 0 10px;
 	border-radius: 4px;
 }
@@ -192,16 +192,23 @@ body {
 		height: 10px;
 		margin: 8px;
 	}
+
 	.form > h1 {
 		font-size: 1.5rem;
 	}
+
 	#user-search {
 		width: 50%;
 	}
+
 	#root {
 		display: grid;
 		padding: 0.6rem 0.6rem;
 		grid-template-columns: 1fr 1fr;
+	}
+
+	#error-msg {
+		font-size: 1.4rem;
 	}
 }
 
@@ -233,6 +240,14 @@ body {
 		padding: 0.6rem 0.6rem;
 		grid-template-columns: 1fr;
 	}
+
+	#user-search {
+		width: 60%;
+	}
+
+	#error-msg {
+		font-size: 1.2rem;
+	}
 }
 
 @media (max-width: 420px) {
@@ -258,5 +273,9 @@ body {
 
 	#user-search {
 		width: 70%;
+	}
+
+	#error-msg {
+		font-size: 1rem;
 	}
 }
