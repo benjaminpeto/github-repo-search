@@ -12,3 +12,5 @@ In case of user does not exist, or doesn't have any public repository, error mes
     4. `live-server`
 
 This will immediately run the app on port :8080 in your local machine.
+
+[Live site HERE](https://benjaminpeto.github.io/github-repo-search/)
